@@ -1,16 +1,16 @@
-import './App.css'
+import { Task } from './Task'
+import { Header } from './components/Header'
+import './global.css'
 
-function App() {
-
+export function App() {
   return (
     <>
-      <h1>Vite + React</h1>
       <div >
-        
+        <Header />
+        <Task />
       </div>
       
     </>
   )
 }
 
-export default App

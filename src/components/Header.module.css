@@ -1,0 +1,14 @@
+.header{
+    color: var(--gray-100);
+    background-color: var(--gray-700);
+    height: 8rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo{
+    height: 32px;
+}
