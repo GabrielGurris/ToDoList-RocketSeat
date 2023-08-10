@@ -1,4 +1,4 @@
-import trash from '../assets/Layer1.svg';
+import { Trash } from "@phosphor-icons/react";
 import styles from './TasksList.module.css';
 
 export function TasksList() {
@@ -10,7 +10,7 @@ export function TasksList() {
                     <label htmlFor="checkbox"></label>
                 </div>
                 <span>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</span>
-                <img src={trash} alt="" />
+                <a href="#"><Trash /></a>
             </div>
         </div>
     )

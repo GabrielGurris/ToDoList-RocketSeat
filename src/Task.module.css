@@ -13,7 +13,7 @@
     border-radius: .4rem;
     padding: 1rem;
 
-    width: 36.5rem;
+    width: 38.5rem;
 }
 
 .a{
@@ -26,13 +26,16 @@
     color: var(--white);
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: .3rem;
     font-size: 0.875rem;
     text-decoration: none;
+
+    transition: 0.2s;
 }
 
-.a img{
-    border-color: var(--blue);
+.a:hover{
+    background-color: var(--gray-200);
+    color: var(--blue-dark);
 }
 
 .header{
@@ -48,6 +51,7 @@
     display: flex;
     gap: 0.75rem;
     color: var(--blue);
+    font-weight: bold;
 }
 
 .header span:nth-child(2){

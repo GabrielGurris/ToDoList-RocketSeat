@@ -1,5 +1,5 @@
 import styles from './Task.module.css';
-import logoPlus from './assets/Layer2.svg';
+import { PlusCircle } from "@phosphor-icons/react";
 
 export function Task(){
     return (
@@ -10,7 +10,7 @@ export function Task(){
                     placeholder="Adicione uma nova tarefa" 
                     className={styles.input}
                 />
-                <a href="#" className={styles.a}>Criar <img src={logoPlus} alt="" /></a>
+                <a href="#" className={styles.a}>Criar <PlusCircle size={24}/></a>
             </form>
             <header className={styles.header}>
                 <span>Tarefas criadas

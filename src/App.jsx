@@ -1,3 +1,4 @@
+import { NoTask } from './NoTask'
 import { Task } from './Task'
 import { Header } from './components/Header'
 import { TasksList } from './components/TasksList'
@@ -10,6 +11,8 @@ export function App() {
         <Header />
         <Task />
         <TasksList />
+        <NoTask />
+        
       </div>
       
     </>
