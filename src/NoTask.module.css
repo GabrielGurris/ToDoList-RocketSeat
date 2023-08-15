@@ -18,6 +18,7 @@
 
 .noTask span{
     color: var(--gray-300);
+    cursor: default;
 }
 
 .noTask span:nth-child(2){

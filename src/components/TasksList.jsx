@@ -1,16 +1,19 @@
-import { Trash } from "@phosphor-icons/react";
+/* eslint-disable react/prop-types */
+import { Circle, CheckCircle, Trash } from '@phosphor-icons/react'
 import styles from './TasksList.module.css';
 
-export function TasksList() {
+export function TasksList( {content, isChecked, handleCheck, handleDeleteTask} ) {
     return (
         <div>
             <div className={styles.main}>
                 <div className={styles.round}>
-                    <input type="checkbox" id="checkbox" />
-                    <label htmlFor="checkbox"></label>
+                {isChecked ?
+                    <CheckCircle size={24} color="#5E50CE" onClick={() => handleCheck(content)} />
+                    : <Circle size={24} color="#5E50CE" onClick={() => handleCheck(content)} />
+                }
                 </div>
-                <span>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</span>
-                <a href="#"><Trash /></a>
+                <span>{content}</span>
+                <button onClick={handleDeleteTask} ><Trash /></button>
             </div>
         </div>
     )

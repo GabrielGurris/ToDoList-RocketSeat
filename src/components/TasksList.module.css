@@ -15,11 +15,13 @@
     grid-template-columns: 1fr 10fr 1fr;
 }
 
-.main a{
+.main button{
     margin-left: auto;
     margin-top: 0.2rem;
     cursor: pointer;
     color: var(--gray-300);
+    background: none;
+    border: none;
 }
 
 .round {
